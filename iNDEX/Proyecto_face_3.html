@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="all.min.js"></script>
+        <link rel="stylesheet" href="proyecto.css">
+        <title> Violencia verval en la escuela </title>
+
+    </head>
+<body>
+    <style>
+        body{
+
+background-color: #92ccb452;
+}
+@media (max-width: 768px) {
+.container {
+  width: 95%;
+}
+}.degradado {
+background: linear-gradient(#c4e7e115, #a3b5f113)
+}
+.ti{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 3em;
+color:#000000;
+}
+
+.container  {
+display: flex;
+justify-content: space-between; 
+}
+
+
+.contenedor1, .contenedor2 {
+
+width: 20%;
+height: 2.5%;
+background: linear-gradient(to right, #86d4f381, #c1dfe971);
+color: #fff;
+text-align: center;
+padding: 2%;
+border-radius: 2%;
+box-shadow: 0% 2% 5% #6e726fd8;
+margin: 3%; /* Añadimos un margen a cada contenedor */
+}
+p{
+text-justify: auto;
+size: 24px;
+color: #363535f8;
+}
+img{
+margin-top: 20%;
+width:30%;
+size: 30%;
+height: 40%;
+}
+a{
+color: limegreen;
+}
+
+.hp1 {
+
+width: 20%;
+height: .5%;
+text-align: center;
+padding: 2%;
+border-radius: 2%;
+box-shadow: 0% 2% 5% #6e726fd8;
+margin: 3%;
+}
+
+.hp2 {
+width: 30%;
+height: .5%;
+text-align: center;
+padding: 2%;
+border-radius: 2%;
+box-shadow: 0% 2% 5% #6e726fd8;
+margin: 3%;
+}
+
+.hp3 {
+width: 20%;
+height: .5%;
+text-align: center;
+padding: 2%;
+border-radius: 2%;
+box-shadow: 0% 2% 5% #6e726fd8;
+margin: 3%;
+}
+
+.b{
+
+text-align: right ;
+margin-left: 30px;
+margin-top: 30px;
+}
+i{
+color: limegreen;
+}
+.cro{
+
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+
+
+}
+.duki{
+margin-left: 21.5%;
+margin-top: 1%;
+width:60%;
+height: 50%;
+}
+
+    </style>
+
+    <p id="contador"></p>
+
+<div class="degradado">
+
+<div class="ti">Violencia verval en CECYTEM Ecatepec II <br></div>
+<br>
+    <div class="container">
+<br>
+<div class="contenedor1"> 
+    <h2><p>Descripcion</p></h2>
+    <h3><p>
+     La violencia verbal en la escuela es un problema serio que afecta a muchos estudiantes. Consiste en usar palabras hirientes, insultar, burlarse o amenazar a otros compañeros con la intención de hacerles daño o sentirse superiores. Esto puede incluir apodos, comentarios negativos sobre la apariencia física o habilidades, o difundir rumores falsos.
+    La violencia verbal puede tener consecuencias muy negativas en las víctimas, como baja autoestima, ansiedad, depresión y dificultades para aprender. Es importante recordar que todos tenemos el derecho a sentirnos seguros y respetados en la escuela. Si tú o alguien que conoces está siendo víctima de violencia verbal, no dudes en buscar ayuda de un adulto de confianza, como un profesor, un consejero escolar o tus padres. </p></div></h3>
+    <img src="img/undraw_undraw_chatting_lt27_d787.svg">
+
+    <div class="contenedor2"> <h2><p>Causas</p></h2> <h3><p>causas de la violencia verbal en la escuela son diversas y complejas. A menudo, se originan en problemas más profundos como la falta de habilidades sociales, la baja autoestima, la influencia de medios violentos, o la dificultad para manejar las emociones. En algunos casos, los estudiantes pueden imitar comportamientos que han observado en sus hogares o en su entorno social. Además, la existencia de grupos o cliques sociales puede generar un ambiente de exclusión y hostilidad, donde la violencia verbal se utiliza como una forma de mantener el poder y el control.
+                Es importante recordar que nadie nace siendo violento. La violencia verbal es un comportamiento aprendido que puede cambiar con la ayuda adecuada.</p></div>
+            </h3>
+                <div class="p3"></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="hp1"><h2><a href="https://www.mundana.us/blog/acoso-y-violencia-escolar">Acciones para prevenir el acoso</a><h2></div>
+                    <div class="hp2"><a href="https://docs.google.com/forms/d/16MFM8cJzpXeD0UV6fbtIr8sQzLkN8tw6g_bNc1GGYZw/edit" title="Completa nuestro formulario"><h2>Clickaqui para saber si sufres de violencia verval</a></div></h2>
+                <div class="hp3">
+                    <h2><a href="https://www.unicef.org/es">UNICEF</a></h2></div>
+                    <br></div>
+
+                <div class="container"><div class="duki" style="text-align: center;">
+  <iframe width="100%" height="350" src="https://www.youtube.com/embed/LO2fl6oNbPk" title="Como convatir la violencia verval" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 1 
+</div><br></div>
+
+                <script>
+                
+                    const contadorElemento = document.getElementById('contador');
+                    
+                
+                    let contador = localStorage.getItem('visitas');
+                    
+                
+                    if (contador === null) {
+                      contador = 1;
+                    } else {
+                
+                      contador = parseInt(contador);
+                
+                      contador++;
+                    }
+                    
+                
+                    localStorage.setItem('visitas', contador);
+                    
+                
+                    contadorElemento.textContent = `Has visitado esta página  ${contador} veces.`;
+                    
+                    </script>
+                   
+
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(173.569, 255, 241.208, 1)" offset="0%"></stop><stop stop-color="rgba(131.446, 175.633, 154.677, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,66L48,58.7C96,51,192,37,288,25.7C384,15,480,7,576,36.7C672,66,768,132,864,132C960,132,1056,66,1152,47.7C1248,29,1344,59,1440,62.3C1536,66,1632,44,1728,44C1824,44,1920,66,2016,77C2112,88,2208,88,2304,80.7C2400,73,2496,59,2592,77C2688,95,2784,147,2880,146.7C2976,147,3072,95,3168,66C3264,37,3360,29,3456,22C3552,15,3648,7,3744,11C3840,15,3936,29,4032,33C4128,37,4224,29,4320,47.7C4416,66,4512,110,4608,113.7C4704,117,4800,81,4896,88C4992,95,5088,147,5184,143C5280,139,5376,81,5472,55C5568,29,5664,37,5760,33C5856,29,5952,15,6048,11C6144,7,6240,15,6336,33C6432,51,6528,81,6624,99C6720,117,6816,125,6864,128.3L6912,132L6912,220L6864,220C6816,220,6720,220,6624,220C6528,220,6432,220,6336,220C6240,220,6144,220,6048,220C5952,220,5856,220,5760,220C5664,220,5568,220,5472,220C5376,220,5280,220,5184,220C5088,220,4992,220,4896,220C4800,220,4704,220,4608,220C4512,220,4416,220,4320,220C4224,220,4128,220,4032,220C3936,220,3840,220,3744,220C3648,220,3552,220,3456,220C3360,220,3264,220,3168,220C3072,220,2976,220,2880,220C2784,220,2688,220,2592,220C2496,220,2400,220,2304,220C2208,220,2112,220,2016,220C1920,220,1824,220,1728,220C1632,220,1536,220,1440,220C1344,220,1248,220,1152,220C1056,220,960,220,864,220C768,220,672,220,576,220C480,220,384,220,288,220C192,220,96,220,48,220L0,220Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(54.265, 52.451, 164.249, 1)" offset="0%"></stop><stop stop-color="rgba(48.319, 255, 128.978, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,154L48,161.3C96,169,192,183,288,179.7C384,176,480,154,576,121C672,88,768,44,864,51.3C960,59,1056,117,1152,124.7C1248,132,1344,88,1440,69.7C1536,51,1632,59,1728,80.7C1824,103,1920,139,2016,161.3C2112,183,2208,191,2304,165C2400,139,2496,81,2592,80.7C2688,81,2784,139,2880,154C2976,169,3072,139,3168,139.3C3264,139,3360,169,3456,168.7C3552,169,3648,139,3744,110C3840,81,3936,51,4032,36.7C4128,22,4224,22,4320,22C4416,22,4512,22,4608,29.3C4704,37,4800,51,4896,55C4992,59,5088,51,5184,51.3C5280,51,5376,59,5472,84.3C5568,110,5664,154,5760,154C5856,154,5952,110,6048,110C6144,110,6240,154,6336,157.7C6432,161,6528,125,6624,99C6720,73,6816,59,6864,51.3L6912,44L6912,220L6864,220C6816,220,6720,220,6624,220C6528,220,6432,220,6336,220C6240,220,6144,220,6048,220C5952,220,5856,220,5760,220C5664,220,5568,220,5472,220C5376,220,5280,220,5184,220C5088,220,4992,220,4896,220C4800,220,4704,220,4608,220C4512,220,4416,220,4320,220C4224,220,4128,220,4032,220C3936,220,3840,220,3744,220C3648,220,3552,220,3456,220C3360,220,3264,220,3168,220C3072,220,2976,220,2880,220C2784,220,2688,220,2592,220C2496,220,2400,220,2304,220C2208,220,2112,220,2016,220C1920,220,1824,220,1728,220C1632,220,1536,220,1440,220C1344,220,1248,220,1152,220C1056,220,960,220,864,220C768,220,672,220,576,220C480,220,384,220,288,220C192,220,96,220,48,220L0,220Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(246.843, 23.844, 255, 1)" offset="0%"></stop><stop stop-color="rgba(6.568, 255, 86.691, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,132L48,124.7C96,117,192,103,288,80.7C384,59,480,29,576,40.3C672,51,768,103,864,128.3C960,154,1056,154,1152,128.3C1248,103,1344,51,1440,58.7C1536,66,1632,132,1728,146.7C1824,161,1920,125,2016,91.7C2112,59,2208,29,2304,44C2400,59,2496,117,2592,150.3C2688,183,2784,191,2880,187C2976,183,3072,169,3168,154C3264,139,3360,125,3456,124.7C3552,125,3648,139,3744,132C3840,125,3936,95,4032,88C4128,81,4224,95,4320,117.3C4416,139,4512,169,4608,161.3C4704,154,4800,110,4896,106.3C4992,103,5088,139,5184,135.7C5280,132,5376,88,5472,84.3C5568,81,5664,117,5760,139.3C5856,161,5952,169,6048,161.3C6144,154,6240,132,6336,128.3C6432,125,6528,139,6624,124.7C6720,110,6816,66,6864,44L6912,22L6912,220L6864,220C6816,220,6720,220,6624,220C6528,220,6432,220,6336,220C6240,220,6144,220,6048,220C5952,220,5856,220,5760,220C5664,220,5568,220,5472,220C5376,220,5280,220,5184,220C5088,220,4992,220,4896,220C4800,220,4704,220,4608,220C4512,220,4416,220,4320,220C4224,220,4128,220,4032,220C3936,220,3840,220,3744,220C3648,220,3552,220,3456,220C3360,220,3264,220,3168,220C3072,220,2976,220,2880,220C2784,220,2688,220,2592,220C2496,220,2400,220,2304,220C2208,220,2112,220,2016,220C1920,220,1824,220,1728,220C1632,220,1536,220,1440,220C1344,220,1248,220,1152,220C1056,220,960,220,864,220C768,220,672,220,576,220C480,220,384,220,288,220C192,220,96,220,48,220L0,220Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(230.482, 62, 243, 1)" offset="0%"></stop><stop stop-color="rgba(243.936, 131.609, 156.579, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,22L48,22C96,22,192,22,288,29.3C384,37,480,51,576,80.7C672,110,768,154,864,161.3C960,169,1056,139,1152,113.7C1248,88,1344,66,1440,47.7C1536,29,1632,15,1728,22C1824,29,1920,59,2016,88C2112,117,2208,147,2304,150.3C2400,154,2496,132,2592,106.3C2688,81,2784,51,2880,66C2976,81,3072,139,3168,154C3264,169,3360,139,3456,132C3552,125,3648,139,3744,146.7C3840,154,3936,154,4032,150.3C4128,147,4224,139,4320,139.3C4416,139,4512,147,4608,154C4704,161,4800,169,4896,161.3C4992,154,5088,132,5184,128.3C5280,125,5376,139,5472,128.3C5568,117,5664,81,5760,69.7C5856,59,5952,73,6048,99C6144,125,6240,161,6336,157.7C6432,154,6528,110,6624,102.7C6720,95,6816,125,6864,139.3L6912,154L6912,220L6864,220C6816,220,6720,220,6624,220C6528,220,6432,220,6336,220C6240,220,6144,220,6048,220C5952,220,5856,220,5760,220C5664,220,5568,220,5472,220C5376,220,5280,220,5184,220C5088,220,4992,220,4896,220C4800,220,4704,220,4608,220C4512,220,4416,220,4320,220C4224,220,4128,220,4032,220C3936,220,3840,220,3744,220C3648,220,3552,220,3456,220C3360,220,3264,220,3168,220C3072,220,2976,220,2880,220C2784,220,2688,220,2592,220C2496,220,2400,220,2304,220C2208,220,2112,220,2016,220C1920,220,1824,220,1728,220C1632,220,1536,220,1440,220C1344,220,1248,220,1152,220C1056,220,960,220,864,220C768,220,672,220,576,220C480,220,384,220,288,220C192,220,96,220,48,220L0,220Z"></path></svg>
+                
+
+</body>
+
+</html>
